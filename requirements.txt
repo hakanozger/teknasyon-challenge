@@ -1,0 +1,9 @@
+Flask
+psycopg2-binary
+Flask-SQLAlchemy
+faker
+python-dotenv
+Flask-Paginate
+werkzeug
+SQLAlchemy
+urllib3
