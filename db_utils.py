@@ -147,3 +147,24 @@ def insert_data_to_db():
     finally:
         cur.close()
         conn.close()
+
+def add_payment_amount_data():
+    conn = get_db_connection()
+    cur = conn.cursor()
+
+    try:
+        logging.info("Calculating payment amount data...")
+        cur.execute(
+            """INSERT INTO payment_amount select row_number() OVER() as id, customers.customer_id, SUM(payments.amount) as sum_payment
+                from customers
+                INNER join subscriptions on customers.customer_id=subscriptions.customer_id
+                INNER join payments on subscriptions.subscription_id =payments.subscription_id 
+                group by customers.customer_id
+                order by 3 DESC""")
+        conn.commit()
+        logging.info("Payment data added to payment_amount successfully.")
+    except Exception as e:
+        logging.error(f"Error creating tables: {e}")
+    finally:
+        cur.close()
+        conn.close()
