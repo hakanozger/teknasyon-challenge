@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from db_utils import create_tables, insert_data_to_db, get_db_connection
+from db_utils import create_tables, insert_data_to_db, get_db_connection, add_payment_amount_data
 import logging
 
 app = Flask(__name__)
@@ -147,4 +147,5 @@ def insert_payment_amount():
 if __name__ == "__main__":
     create_tables()
     insert_data_to_db()
-    app.run(debug=True, host="0.0.0.0", port=5001)
+    add_payment_amount_data()
+    app.run(debug=True, host="0.0.0.0", port=4000)
