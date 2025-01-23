@@ -1,6 +1,6 @@
 - ## INSTRUCTIONS
   - Download the repository
-  - Clear Log folder (You should delete all the logs in the Logs folder)
+  - Clear Log folder if necessary (You should delete all the logs in the Logs folder if you get any no located file error)
   - Run "docker compose up --build" command
   - Install python libraries given in the "requirement.txt" file
   - Run app.py
