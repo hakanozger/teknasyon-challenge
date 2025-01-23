@@ -6,4 +6,6 @@
   - Run app.py
   - Connect the database using a database tool to check tables and run queries given in the "Task 2" document. You can find database info in the "db_info.txt" file
 
-
+- ## Opening Airflow
+  - Login link: http://localhost:8080/login/ user_name and pasword: airflow
+  - Dag names: etl_process and import_payment_data (there are lots of other default dags)
