@@ -114,3 +114,21 @@
 [2025-01-23T12:37:58.340+0000] {logging_mixin.py:188} INFO - [2025-01-23T12:37:58.340+0000] {dag.py:3823} INFO - Setting next_dagrun for etl_process to 2025-01-01 22:00:00+00:00, run_after=2025-01-02 22:00:00+00:00
 [2025-01-23T12:37:58.349+0000] {logging_mixin.py:188} INFO - [2025-01-23T12:37:58.348+0000] {dag.py:3823} INFO - Setting next_dagrun for import_payment_data to 2025-01-01 22:00:00+00:00, run_after=2025-01-02 22:00:00+00:00
 [2025-01-23T12:37:58.396+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_process.py took 0.228 seconds
+[2025-01-23T12:38:28.661+0000] {processor.py:161} INFO - Started process (PID=740) to work on /opt/airflow/dags/etl_process.py
+[2025-01-23T12:38:28.662+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_process.py for tasks to queue
+[2025-01-23T12:38:28.668+0000] {logging_mixin.py:188} INFO - [2025-01-23T12:38:28.667+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_process.py
+[2025-01-23T12:38:28.733+0000] {logging_mixin.py:188} INFO - [2025-01-23T12:38:28.733+0000] {elt_processes.py:11} INFO - Starting data generation script...
+[2025-01-23T12:38:28.749+0000] {processor.py:840} INFO - DAG(s) 'import_payment_data', 'etl_process' retrieved from /opt/airflow/dags/etl_process.py
+[2025-01-23T12:38:28.791+0000] {logging_mixin.py:188} INFO - [2025-01-23T12:38:28.790+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2025-01-23T12:38:28.837+0000] {logging_mixin.py:188} INFO - [2025-01-23T12:38:28.836+0000] {dag.py:3823} INFO - Setting next_dagrun for etl_process to 2025-01-01 22:00:00+00:00, run_after=2025-01-02 22:00:00+00:00
+[2025-01-23T12:38:28.845+0000] {logging_mixin.py:188} INFO - [2025-01-23T12:38:28.845+0000] {dag.py:3823} INFO - Setting next_dagrun for import_payment_data to 2025-01-01 22:00:00+00:00, run_after=2025-01-02 22:00:00+00:00
+[2025-01-23T12:38:28.877+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_process.py took 0.223 seconds
+[2025-01-23T12:38:59.059+0000] {processor.py:161} INFO - Started process (PID=796) to work on /opt/airflow/dags/etl_process.py
+[2025-01-23T12:38:59.061+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_process.py for tasks to queue
+[2025-01-23T12:38:59.066+0000] {logging_mixin.py:188} INFO - [2025-01-23T12:38:59.065+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_process.py
+[2025-01-23T12:38:59.136+0000] {logging_mixin.py:188} INFO - [2025-01-23T12:38:59.134+0000] {elt_processes.py:11} INFO - Starting data generation script...
+[2025-01-23T12:38:59.148+0000] {processor.py:840} INFO - DAG(s) 'etl_process', 'import_payment_data' retrieved from /opt/airflow/dags/etl_process.py
+[2025-01-23T12:38:59.197+0000] {logging_mixin.py:188} INFO - [2025-01-23T12:38:59.196+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2025-01-23T12:38:59.242+0000] {logging_mixin.py:188} INFO - [2025-01-23T12:38:59.242+0000] {dag.py:3823} INFO - Setting next_dagrun for etl_process to 2025-01-01 22:00:00+00:00, run_after=2025-01-02 22:00:00+00:00
+[2025-01-23T12:38:59.252+0000] {logging_mixin.py:188} INFO - [2025-01-23T12:38:59.252+0000] {dag.py:3823} INFO - Setting next_dagrun for import_payment_data to 2025-01-01 22:00:00+00:00, run_after=2025-01-02 22:00:00+00:00
+[2025-01-23T12:38:59.278+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_process.py took 0.225 seconds
